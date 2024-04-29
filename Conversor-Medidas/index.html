@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas e Volumes</title>
+    <link rel="icon" type="image/x-icon" href="/Calculadora/calculadora (1).png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <a href="/Calculadora/Index.html".html">Calculadora</a>
+                <a href="#">.</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h1>Conversor de Medidas e Volumes</h1>
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor">
+        </div>
+        <div>
+            <label for="de">De:</label>
+            <select id="de">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="m">Metros (m)</option>
+                <option value="km">Quilômetros (km)</option>
+                <option value="in">Polegadas (in)</option>
+                <option value="ft">Pés (ft)</option>
+                <option value="yd">Jardas (yd)</option>
+            </select>
+        </div>
+        <div>
+            <label for="para">Para:</label>
+            <select id="para">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="m">Metros (m)</option>
+                <option value="km">Quilômetros (km)</option>
+                <option value="in">Polegadas (in)</option>
+                <option value="ft">Pés (ft)</option>
+                <option value="yd">Jardas (yd)</option>
+            </select>
+        </div>
+        <button onclick="converter()">Converter</button>
+        <div class="result" id="resultado"></div>
+    </div>
+    <footer>
+        <p>Andre Junior<br>
+        <a href="https://github.com/anndrehjr"><img src="/Calculadora/image.png" width="30" height="30" alt="GitHub"></a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
