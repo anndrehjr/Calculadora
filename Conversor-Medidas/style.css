@@ -5,10 +5,11 @@ body {
     text-align: center;
     font-size: 30px;
     margin: 0;
+    border-style: double;
 }
 
 .menu {
-    background-color: rgba(90, 87, 87, 0.7); /* Cor de fundo com transparência */
+    background-color: rgba(231, 1, 1, 0.7);
     color: #fff;
     padding: 10px;
     justify-content: space-between;
@@ -23,11 +24,11 @@ body {
     margin: 0 10px;
     border: 1px solid #fff;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo com transparência */
+    background-color: rgba(97, 86, 86, 0.3);
 }
 
 .menu a:hover {
-    background-color: rgba(7, 6, 6, 0.5); /* Cor de fundo com transparência */
+    background-color: rgba(7, 6, 6, 0.5);
 }
 
 .container {
@@ -71,17 +72,21 @@ button:hover {
 }
 
 footer {
-    background-color: rgba(90, 87, 87, 0.7); /* Cor de fundo com transparência */
+    background-color: rgba(175, 11, 11, 0.7); /* Cor de fundo com transparência */
     color: #fff;
     padding: 5px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+    }
 }
