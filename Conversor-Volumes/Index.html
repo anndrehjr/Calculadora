@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Volumes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="/Calculadora/Index.html">Calculadora</a></li>
+                <li><a href="/Conversor-Medidas/">Conversor-Medidas</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="converter">
+        <h1>Conversor de Volumes</h1>
+        <div class="input-group">
+            <label for="inputValue">Valor:</label>
+            <input type="number" id="inputValue" placeholder="Digite o valor">
+        </div>
+        <div class="input-group">
+            <label for="inputUnit">De:</label>
+            <select id="inputUnit">
+                <option value="liters">Litros</option>
+                <option value="milliliters">Mililitros</option>
+                <option value="gallons">Galões</option>
+                <option value="cubic_meters">Metros Cúbicos</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="outputUnit">Para:</label>
+            <select id="outputUnit">
+                <option value="liters">Litros</option>
+                <option value="milliliters">Mililitros</option>
+                <option value="gallons">Galões</option>
+                <option value="cubic_meters">Metros Cúbicos</option>
+            </select>
+        </div>
+        <button onclick="convertVolume()">Converter</button>
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="result">-</p>
+        </div>
+    </div>
+    <footer>
+        <p>Andre Junior<br>
+        <a href="https://github.com/anndrehjr"><img src="/Calculadora/image.png" width="30" height="30" alt="GitHub"></a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
